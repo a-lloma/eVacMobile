@@ -42,7 +42,7 @@ export default function VisitedDetails() {
             style={styles.mapStyle}
           >
             <Marker 
-              icon={mapMarkerImg}
+              // icon={mapMarkerImg}
               coordinate={{ 
                 latitude: -23.553525,
                 longitude: -46.69435

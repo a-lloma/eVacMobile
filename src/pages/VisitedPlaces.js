@@ -18,6 +18,31 @@ export default function VisitedPlaces() {
 
                 provider={PROVIDER_GOOGLE}  // tanto android quando em dispositivos iOS vão usar o mapa da google    
                 initialRegion={{
+                    latitude: -23.553525,
+                    longitude: -46.69435,
+                    latitudeDelta: 0.008,
+                    longitudeDelta: 0.008,
+                }} >
+                <Marker
+                    // icon={pointMarker}
+                    coordinate={{
+                        latitude: -23.553525,
+                        longitude: -46.69435,
+                    }}
+                >
+                    <Callout tooltip={true} onCalloutPress={handleNavigateToVisitedDetails}>
+                        <View style={styles.calloutContainer} >
+                            <Text style={styles.calloutText}>
+                                Visita Realizada
+                </Text>
+                        </View>
+                    </Callout>
+                </Marker>
+            </MapView>
+            {/* <MapView style={styles.map}
+
+                provider={PROVIDER_GOOGLE}  // tanto android quando em dispositivos iOS vão usar o mapa da google    
+                initialRegion={{
                     latitude: -23.5613462,
                     longitude: -46.6586759,
                     latitudeDelta: 0.008,
@@ -38,7 +63,7 @@ export default function VisitedPlaces() {
                         </View>
                     </Callout>
                 </Marker>
-            </MapView>
+            </MapView> */}
 
             <View style={styles.footer}>
                 <Text style={styles.footerText}>2 visitas realizadas</Text>

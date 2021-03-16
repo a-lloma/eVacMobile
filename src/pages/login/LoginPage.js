@@ -16,20 +16,19 @@ export default function LoginPage() {
         navigation.navigate('Home');
     }
 
-
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Login Page</Text>
+            <Text style={styles.title}>Login Page 4</Text>
             <StatusBar style="auto" />
 
             <RectButton style={styles.createRegisterButton} onPress={handleNavigateToRegisterPage}>
-                    <Feather name="plus" size={20} color="#FFF" /> 
-                    <Text>Criar conta</Text>
-                </RectButton>
+                <Feather name="plus" size={20} color="#FFF" />
+                <Text>Criar conta</Text>
+            </RectButton>
             <RectButton style={styles.createLogin} onPress={handleLogar}>
-                    <Feather name="plus" size={20} color="#FFF" /> 
-                    <Text>Logar</Text>
-                </RectButton>
+                <Feather name="plus" size={20} color="#FFF" />
+                <Text>Logar</Text>
+            </RectButton>
         </View>
     );
 }
@@ -37,17 +36,17 @@ export default function LoginPage() {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#444',
-      alignItems: 'center',
-      justifyContent: 'center',
+        flex: 1,
+        backgroundColor: '#444',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-  
+
     title: {
-      color: '#fff',
-      fontSize: 40,
-      fontWeight: 'bold',
-      fontFamily: 'Raleway_700Bold',
+        color: '#fff',
+        fontSize: 40,
+        fontWeight: 'bold',
+        fontFamily: 'Raleway_700Bold',
     },
 
     createRegisterButton: {
@@ -66,4 +65,4 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-  });
+});

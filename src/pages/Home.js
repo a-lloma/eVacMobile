@@ -16,13 +16,13 @@ export default function Home() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Login Page</Text>
+            <Text style={styles.title}>Home</Text>
             <StatusBar style="auto" />
 
             <RectButton style={styles.createVisitButton} onPress={handleNavigateToVisits}>
-                    <Feather name="plus" size={20} color="#FFF" /> 
-                    <Text>Consultar visitas</Text>
-                </RectButton>
+                <Feather name="plus" size={20} color="#FFF" />
+                <Text>Consultar visitas</Text>
+            </RectButton>
         </View>
     );
 }
@@ -30,18 +30,18 @@ export default function Home() {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#56ced4',
-      alignItems: 'center',
-      justifyContent: 'center',
+        flex: 1,
+        backgroundColor: '#56ced4',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-  
+
     title: {
-      color: '#fff',
-      fontSize: 40,
-      fontWeight: 'bold',
-      fontFamily: 'Raleway_700Bold',
-      fontSize: 24,
+        color: '#fff',
+        fontSize: 40,
+        fontWeight: 'bold',
+        fontFamily: 'Raleway_700Bold',
+        fontSize: 24,
     },
 
     createVisitButton: {
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-  });
+});
