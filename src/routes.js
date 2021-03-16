@@ -17,31 +17,27 @@ export default function Routes() {
         <NavigationContainer>
             <Navigator screenOptions={{ headerShown: false, cardStyle: { backgroundColor: '#f2f3f5'} }}>
                 <Screen name="LoginPage" 
-                component={LoginPage}
+                    component={LoginPage}
                 />
                 <Screen name="Home" 
-                component={Home}
+                    component={Home}
                 />
                 <Screen name="RegisterPage" 
-                component={RegisterPage}
-                options={{
-                    headerShown: true,
-                    header: () => <Header title="Informe os dados"/>
-                }}
+                    component={RegisterPage}
                 />
                 <Screen name="VisitedPlaces" 
-                component={VisitedPlaces}
-                options={{
-                    headerShown: true,
-                    header: () => <Header title="Lugares Visitados" showCancel={false} />
-                }}
+                    component={VisitedPlaces}
+                    options={{
+                        headerShown: true,
+                        header: () => <Header title="Lugares Visitados" showCancel={false} />
+                    }}
                 />
                 <Screen name="VisitedDetails" 
-                component={VisitedDetails}
-                options={{
-                    headerShown: true,
-                    header: () => <Header title="Detalhes da visita" />
-                }}
+                    component={VisitedDetails}
+                    options={{
+                        headerShown: true,
+                        header: () => <Header title="Detalhes da visita" />
+                    }}
                 />
             </Navigator>
         </NavigationContainer>
